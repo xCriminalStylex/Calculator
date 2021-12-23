@@ -56,7 +56,7 @@ namespace Calculator
        
         public static void CheckToInt(string str, out int a)
         {
-            if (!int.TryParse(Console.ReadLine(), out  a))
+            if (!int.TryParse(str, out  a))
                 throw new ArgumentException("Это не число");
             
         }

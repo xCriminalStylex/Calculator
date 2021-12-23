@@ -87,8 +87,8 @@ namespace CalculatorTest
         [InlineData("gg")]
         public void NegativCheckIntTest(string a)
         {
-            //string a = "gg";
-            Action action = () => Calculator.Program.CheckToInt(a, out int value);
+            
+            Action action = () => Program.CheckToInt(a, out int value);
             Assert.Throws<ArgumentException>(action);
         }
     }
